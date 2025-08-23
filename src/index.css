@@ -1,1 +1,26 @@
 @import 'tailwindcss';
+
+/* Spotlight Animation */
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+.animate-spotlight {
+  animation: spotlight 2s ease 0.75s 1 forwards;
+}
+
+/* Grid Background */
+.bg-grid-white\/\[0\.02\] {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.bg-grid-16 {
+  background-size: 16px 16px;
+}
