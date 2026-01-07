@@ -10,11 +10,6 @@ const Hero = () => {
       {/* Background */}
       <div className={`absolute inset-0`}>
         <div className='absolute inset-0 bg-grid-white/[0.02] bg-grid-16' />
-
-        <Spotlight
-          className='-top-40 left-0 md:left-60 md:-top-20 opacity-'
-          fill={isDarkMode ? 'white' : 'blue'}
-        />
       </div>
 
       {/* Content */}

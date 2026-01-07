@@ -7,11 +7,7 @@ const Header = () => {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
-    <header
-      className={`w-full px-6 py-4 border-b ${
-        isDarkMode ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-100'
-      }`}
-    >
+    <header className={`w-full px-6 py-4 `}>
       <div className='max-w-7xl mx-auto flex items-center justify-between'>
         {/* Logo */}
         <div className='flex items-center'>
