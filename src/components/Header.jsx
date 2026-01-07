@@ -24,15 +24,13 @@ const Header = () => {
 
         <button
           onClick={toggleTheme}
-          className={`p-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-            isDarkMode
-              ? 'bg-gray-800 hover:bg-gray-700 focus:ring-offset-gray-900'
-              : 'bg-gray-100 hover:bg-gray-200 focus:ring-offset-white'
+          className={`p-2 rounded-full transition-colors duration-200  ${
+            isDarkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-100 '
           }`}
           aria-label='Toggle theme'
         >
           {isDarkMode ? (
-            <HiSun className='w-5 h-5 text-yellow-500' />
+            <HiSun className='w-5 h-5 text-white' />
           ) : (
             <HiMoon className='w-5 h-5 text-gray-600' />
           )}
