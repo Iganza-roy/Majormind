@@ -45,15 +45,24 @@ const Hero = () => {
           daily insights, tools, and automation know-how.
         </p>
 
-        {/* Optional CTA Button */}
-        <div className='mt-10'>
-          <button className='px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg'>
+        <div className='mt-10 flex flex-col sm:flex-row gap-4 justify-center'>
+          <button
+            className={`px-8 py-3 bg-gradient-to-r ${
+              isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-800 text-white'
+            }  font-semibold rounded-4xl transition-all duration-300 transform hover:scale-105 shadow-lg `}
+          >
             Get Started
+          </button>
+          <button
+            className={`px-8 py-3 bg-gradient-to-r ${
+              isDarkMode ? 'bg-white text-gray-800' : 'bg-gray-200'
+            } font-semibold rounded-4xl transition-all duration-300 transform hover:scale-105 shadow-lg `}
+          >
+            Contact us
           </button>
         </div>
       </div>
 
-      {/* Bottom fade */}
       <div className='absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/50 to-transparent' />
     </div>
   );

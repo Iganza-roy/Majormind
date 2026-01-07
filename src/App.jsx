@@ -11,8 +11,8 @@ const AppContent = () => {
       className={`min-h-screen ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}
     >
       <Spotlight
-        className='-top-40 left-0 md:left-60 md:-top-20 opacity-'
-        fill={isDarkMode ? 'white' : 'blue'}
+        className='-top-40 left-0 md:left-60 md:-top-20'
+        fill={isDarkMode ? 'white' : 'black'}
       />
       <Header />
       <Hero />
